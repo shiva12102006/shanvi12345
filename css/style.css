@@ -1385,21 +1385,24 @@ footer {
 }
 
 .social-link {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  background: rgba(255, 107, 0, 0.1);
-  border: 1px solid rgba(255, 107, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 107, 0, 0.08);
+  border: 1px solid rgba(255, 107, 0, 0.35);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 0 12px rgba(255, 107, 0, 0.16);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  color: var(--white);
   transition: var(--transition);
 }
 
 .social-link:hover {
   background: var(--orange);
-  border-color: var(--orange);
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15), 0 0 18px rgba(255, 107, 0, 0.35);
   transform: translateY(-2px);
 }
 
