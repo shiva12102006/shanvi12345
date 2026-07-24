@@ -280,7 +280,7 @@ if (contactForm) {
 document.querySelectorAll('.btn-inquiry').forEach(btn => {
   btn.addEventListener('click', () => {
     const product = btn.closest('.product-card')?.querySelector('h3')?.textContent || 'product';
-    showToast(`📞 Inquiry sent for ${product}! We'll call you soon.`);
+    window.location.href = `contact.html?service=${encodeURIComponent(product)}`;
   });
 });
 
