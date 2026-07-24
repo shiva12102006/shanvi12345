@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Our Products – shanviArts</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="page-loader"><div class="loader-logo"><span>shanvi</span><span>Arts</span></div><div class="loader-bar"><div class="loader-fill"></div></div></div>
+
+<nav class="navbar">
+  <div class="nav-logo"><span>shanvi</span><span>Arts</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Get Quote</a>
+  </div>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="products.html">Products</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="nav-cta">Get Quote</a>
+</div>
+
+<div class="page-header" style="background-image:url('images/contactbanner.png')">
+  <div class="container">
+    <h1>Our <span style="color:var(--orange)">Products</span></h1>
+    <p class="breadcrumb">Home › <span>Products</span></p>
+  </div>
+</div>
+
+<!-- PRODUCTS SECTION -->
+<section class="section" style="background:var(--dark3)">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Browse</span>
+      <h2 class="section-title">Product <span class="hl">Categories</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <!-- CATEGORY ICONS -->
+    <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:40px" class="reveal">
+      <div style="text-align:center;cursor:pointer" onclick="document.querySelector('[data-filter=banners]').click()">
+        <div style="width:70px;height:70px;background:rgba(255,107,0,0.15);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 8px;transition:.3s" onmouseover="this.style.background='var(--orange)'" onmouseout="this.style.background='rgba(255,107,0,0.15)'">🏷️</div>
+        <span style="font-size:0.8rem;color:var(--text-muted)">Banners</span>
+      </div>
+      <div style="text-align:center;cursor:pointer" onclick="document.querySelector('[data-filter=tshirts]').click()">
+        <div style="width:70px;height:70px;background:rgba(255,107,0,0.15);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 8px;transition:.3s" onmouseover="this.style.background='var(--orange)'" onmouseout="this.style.background='rgba(255,107,0,0.15)'">👕</div>
+        <span style="font-size:0.8rem;color:var(--text-muted)">T-Shirts</span>
+      </div>
+      <div style="text-align:center;cursor:pointer" onclick="document.querySelector('[data-filter=mugs]').click()">
+        <div style="width:70px;height:70px;background:rgba(255,107,0,0.15);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 8px;transition:.3s" onmouseover="this.style.background='var(--orange)'" onmouseout="this.style.background='rgba(255,107,0,0.15)'">☕</div>
+        <span style="font-size:0.8rem;color:var(--text-muted)">Mugs</span>
+      </div>
+      <div style="text-align:center;cursor:pointer" onclick="document.querySelector('[data-filter=cards]').click()">
+        <div style="width:70px;height:70px;background:rgba(255,107,0,0.15);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 8px;transition:.3s" onmouseover="this.style.background='var(--orange)'" onmouseout="this.style.background='rgba(255,107,0,0.15)'">💳</div>
+        <span style="font-size:0.8rem;color:var(--text-muted)">Visiting Cards</span>
+      </div>
+      <div style="text-align:center;cursor:pointer" onclick="document.querySelector('[data-filter=keychains]').click()">
+        <div style="width:70px;height:70px;background:rgba(255,107,0,0.15);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto 8px;transition:.3s" onmouseover="this.style.background='var(--orange)'" onmouseout="this.style.background='rgba(255,107,0,0.15)'">🗝️</div>
+        <span style="font-size:0.8rem;color:var(--text-muted)">Keychains</span>
+      </div>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs reveal">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="banners">Banners</button>
+      <button class="filter-btn" data-filter="tshirts">T-Shirts</button>
+      <button class="filter-btn" data-filter="mugs">Mugs</button>
+      <button class="filter-btn" data-filter="cards">Visiting Cards</button>
+      <button class="filter-btn" data-filter="keychains">Keychains</button>
+    </div>
+
+    <h3 style="margin-bottom:24px;font-size:1.2rem" class="reveal">All Products</h3>
+    <div class="products-grid">
+      <div class="product-card reveal reveal-delay-1" data-category="banners">
+        <div class="product-img-wrap"><img src="images/product_flex_banner.jpg" alt="Flex Banner"/><span class="product-badge">📌 Popular</span></div>
+        <div class="product-info"><h3>Flex Banner</h3><p>UV-resistant vinyl flex, outdoor & indoor, all sizes available.</p><div class="product-footer"><span class="product-price">₹299</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-2" data-category="banners">
+        <div class="product-img-wrap"><img src="images/product_rollup.jpg" alt="Roll Up Banner"/><span class="product-badge">🔥 Hot</span></div>
+        <div class="product-info"><h3>Roll Up Banner</h3><p>Premium retractable roll-up standee banners for events.</p><div class="product-footer"><span class="product-price">₹499</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-3" data-category="banners">
+        <div class="product-img-wrap"><img src="images/banner_sale.jpg" alt="Vinyl Poster"/></div>
+        <div class="product-info"><h3>Vinyl Poster</h3><p>High-quality vinyl poster for indoor and outdoor use.</p><div class="product-footer"><span class="product-price">₹99</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-1" data-category="tshirts">
+        <div class="product-img-wrap"><img src="images/product_tshirt.jpg" alt="Custom T-Shirt"/><span class="product-badge">🔥 Best Seller</span></div>
+        <div class="product-info"><h3>Custom T-Shirt</h3><p>DTF/sublimation printing on premium round-neck tees.</p><div class="product-footer"><span class="product-price">₹199</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-2" data-category="mugs">
+        <div class="product-img-wrap"><img src="images/product_mug.jpg" alt="Printed Mug"/><span class="product-badge">🎁 Gift</span></div>
+        <div class="product-info"><h3>Printed Mug</h3><p>Photo printed ceramic mug — perfect for gifting.</p><div class="product-footer"><span class="product-price">₹149</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-3" data-category="mugs">
+        <div class="product-img-wrap"><img src="images/product_plate.jpg" alt="Photo Plate"/></div>
+        <div class="product-info"><h3>Photo Plate</h3><p>Ceramic photo plate for wall display and gifting.</p><div class="product-footer"><span class="product-price">₹249</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-1" data-category="cards">
+        <div class="product-img-wrap"><img src="images/product_visiting_card.jpg" alt="Visiting Card"/><span class="product-badge">💼 Pro</span></div>
+        <div class="product-info"><h3>Visiting Card</h3><p>Premium 350 GSM matte/gloss finish business cards.</p><div class="product-footer"><span class="product-price">₹199</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-2" data-category="keychains">
+        <div class="product-img-wrap"><img src="images/product_keychain.jpg" alt="Keychain"/><span class="product-badge">✨ New</span></div>
+        <div class="product-info"><h3>Keychain</h3><p>Custom photo/logo printed acrylic and metal keychains.</p><div class="product-footer"><span class="product-price">₹49</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-3" data-category="cards">
+        <div class="product-img-wrap"><img src="images/product_idcard.jpg" alt="ID Card"/></div>
+        <div class="product-info"><h3>ID Card</h3><p>Custom printed ID cards with lanyard options.</p><div class="product-footer"><span class="product-price">₹79</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-1" data-category="banners">
+        <div class="product-img-wrap"><img src="images/product_poster.jpg" alt="Poster"/></div>
+        <div class="product-info"><h3>Poster Printing</h3><p>Full color A4 to A0 poster printing with vivid colors.</p><div class="product-footer"><span class="product-price">₹99</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-2" data-category="tshirts">
+        <div class="product-img-wrap"><img src="images/portfolio_tshirt.jpg" alt="Polo T-Shirt"/></div>
+        <div class="product-info"><h3>Polo T-Shirt</h3><p>Embroidered or printed polo tees for corporate use.</p><div class="product-footer"><span class="product-price">₹299</span><button class="btn-inquiry">Inquiry Now</button></div></div>
+      </div>
+      <div class="product-card reveal reveal-delay-3" data-category="keychains">
+        <div class="product-img-wrap"><img src="images/portfolio_branding.jpg" alt="Custom Branding"/></div>
+        <div class="product-info"><h3>Custom Branding Kit</h3><p>Complete branding package — cards, mugs, tees and more.</p><div class="product-footer"><span class="product-price">Custom</span><button class="btn-inquiry">Get Quote</button></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BULK ORDER -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center" class="reveal">
+      <div class="bulk-banner">
+        <h2>Bulk Order for Events and Businesses</h2>
+        <p>Special discounts for bulk orders above 50 pieces. Contact us for custom pricing.</p>
+        <a href="contact.html" class="btn-white">Get Bulk Quote</a>
+      </div>
+      <div>
+        <img src="images/banner_grand_opening.jpg" alt="Bulk Order" style="border-radius:16px;width:100%;height:260px;object-fit:cover"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><span>shanvi</span><span>Arts</span></div><p class="footer-desc">Your one-stop solution for all custom printing and branding needs.</p><div class="social-links"><a class="social-link" href="#">f</a><a class="social-link" href="#">📸</a><a class="social-link" href="#">𝕏</a><a class="social-link" href="#">▶</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Our Services</h4><ul><li><a href="services.html">Banner Printing</a></li><li><a href="services.html">Poster Printing</a></li><li><a href="services.html">T-Shirt Printing</a></li><li><a href="services.html">Mug Printing</a></li><li><a href="services.html">Visiting Cards</a></li></ul></div>
+      <div class="footer-col"><h4>Contact Details</h4><div class="footer-contact"><div class="footer-contact-item"><span>📞</span><span>+91 9920084205</span></div><div class="footer-contact-item"><span>✉️</span><span>info@shanviarts.com</span></div><div class="footer-contact-item"><span>📍</span><span>123, Printing Street, New Delhi – 110001</span></div></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 shanviArts. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<button class="back-top">↑</button>
+<a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank">💬</a>
+<div class="toast"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
