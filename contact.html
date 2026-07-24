@@ -208,5 +208,50 @@
 <a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank">💬</a>
 <div class="toast"></div>
 <script src="js/main.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // पेज को रीलोड होने से रोकें
+  
+  const form = this;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  
+  // फॉर्म के इनपुट एलिमेंट्स से डेटा इकट्ठा करें
+  const formData = new URLSearchParams();
+  formData.append('fname', document.getElementById('fname').value);
+  formData.append('fphone', document.getElementById('fphone').value);
+  formData.append('femail', document.getElementById('femail').value);
+  formData.append('fservice', document.getElementById('fservice').value);
+  formData.append('fmsg', document.getElementById('fmsg').value);
+  
+  // सबमिट बटन को डिसेबल करें ताकि यूजर बार-बार क्लिक न कर सके
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Sending Message...";
+  
+  // आपका दिया गया गूगल स्क्रिप्ट URL
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzLTnuNzT0q0quzqYP9nhpQGTAbktGC3dvviAoRk8rL5TkoTegZDmY_FRr4OutKN-iiqQ/exec'; 
+  
+  // डेटा को Google Apps Script पर भेजें
+  fetch(scriptURL, {
+    method: 'POST',
+    body: formData,
+    mode: 'no-cors' // गूगल स्क्रिप्ट में CORS एरर से बचने के लिए आवश्यक है
+  })
+  .then(response => {
+    // सफलता का संदेश और फॉर्म रीसेट करना
+    alert('आपका मैसेज सफलतापूर्वक भेज दिया गया है और शीट में सेव हो गया है!');
+    form.reset();
+  })
+  .catch(error => {
+    console.error('Error!', error.message);
+    alert('मैसेज भेजने में कोई गड़बड़ हुई है, कृपया दोबारा प्रयास करें।');
+  })
+  .finally(() => {
+    // बटन को वापस सामान्य स्थिति में लाएं
+    submitBtn.disabled = false;
+    submitBtn.innerText = "📨 Send Message";
+  });
+});
+
+</script>
 </body>
 </html>
